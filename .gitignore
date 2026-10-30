@@ -1,0 +1,40 @@
+.venv/
+**/.venv/
+node_modules/
+**/node_modules/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+dist/
+build/
+
+# Uploaded and generated videos
+backend/videos/uploads/
+backend/videos/processed/
+backend/camera_feeds/
+backend/runs/
+backend/_codex_van_validation/
+
+# Generated reports and detection crops
+backend/helmet_debug/
+backend/helmet_crops/
+backend/reports/
+backend/videos/helmet_crops/
+backend/videos/accident_evidence/
+
+# Large AI models
+*.pt
+
+# Local user data
+backend/users.json
+
+# Debug images and test images
+backend/*debug*.jpg
+backend/*plate*.jpg
+backend/best_plate*.jpg
+backend/helmet_test.jpg
+
+# Backup code
+backend/app/services/*BACKUP*
